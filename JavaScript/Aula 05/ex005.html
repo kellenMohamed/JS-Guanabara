@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: purple;
+            color: white;
+            font: calibri 18pt bold;
+        }
+        p {            
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com o Dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id='msg'>Clique Aqui</div>
+    <script>
+        window.document.write('Olá Mundo <br/>')
+       // window.document.write(window.navigator.appName)
+       // window.document.write(window.document.charset)
+       // window.document.write(window.document.URL)
+
+        var p1 = window.document.getElementsByTagName('p')[0];//Podemos utilizar ou não o ; no fim das declarações
+        window.document.write('Está escrito assim dentro de p1: ' + p1.innerText)
+
+
+        var p2 = window.document.getElementsByTagName('p')[1];//Podemos utilizar ou não o ; no fim das declarações
+        p2.style.color = 'red';
+
+        var corpo = window.document.body;
+        corpo.style.background = 'black';
+
+        document.write[p1.innerHTML];
+
+       /* var d = window.document.getElementById('msg');
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando'
+        window.document.getElementById('msg').innerText = 'Mudei de novo'
+        */
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
+    </script>
+</body>
+</html>

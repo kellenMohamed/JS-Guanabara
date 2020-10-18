@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Primeiro Programa!!</title>
     <style>
+        /*Parte CSS -> Stilo das fontes*/
         body{
             background-color: rgb(179, 161, 171);
             color: white;
@@ -28,8 +29,14 @@
     <p>Já me livrei de problemas !!!</p>
     <script>
         window.alert('Minha primeira mensagem.');
-        window.confirm('Está gostando de JS')
-        window.prompt('Qual é seu nome?')
+        window.confirm('Está gostando de JS?')
+        var nome = window.prompt('Qual é seu nome') //-Isso é um comentário
+        alert('É um prazer te conhecer: ' + nome + '!')
+        var n1 = Number(window.prompt('Digite um número inteiro: '))
+        var n2 = Number(window.prompt('Digite um número float: '))
+        soma = n1 + n2;
+        window.alert(`A soma de ${n1} mais ${n2} é ${soma}`)
     </script>
 </body>
 </html>
+

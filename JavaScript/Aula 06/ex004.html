@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa!!</title>
+    <style>
+        /*Parte CSS -> Stilo das fontes*/
+        body { font: normal 15pt arial};
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é seu nome?');
+        document.write(`Seu nome <b>${nome}</b> tem ${nome.length} letras <br/>`);
+        document.write(`Seu nome <strong>${nome}</strong> em maíusculo ficará <strong>${nome.toUpperCase()}</strong><br/>`);
+        document.write(`Seu nome <b>${nome}<b> em minúsculo ficará <strong>${nome.toLowerCase()}<strong>`);
+    </script>
+</body>
+</html>
+
