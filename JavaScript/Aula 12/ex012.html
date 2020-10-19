@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valida Votação</title>
+    <style>
+        body{
+            background-color:rgb(226, 226, 162);
+        }
+
+        h1 {
+            font: arial 15pt;
+            color: green;            
+        }
+    </style>
+</head>
+<body>
+    <h1>Validar Votação</h1>
+    <input type="text" name="txtIdade" id="txtIdade">
+    <input type="button" value="Validar" onclick="validaVoto()">
+    <div id="res"></div>
+    <script>
+        function validaVoto(){
+            Idade: document.querySelector('input#txtIdade')
+            if (idade<16){
+                res.innerHTML = `Não é necessário votar, pois sua idade é ${idade}`
+            }else if (idade<18 || idade>=65){    
+                res.innerHTML = 'Voto Opcional'
+            }else{
+                res.innerHTML = 'Voto Obrigatório'
+            } 
+        }
+    </script>
+    
+</body>
+</html>
